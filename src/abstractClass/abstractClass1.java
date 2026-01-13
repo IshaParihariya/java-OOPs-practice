@@ -10,11 +10,11 @@ not object and overridding is becasue of object
 
 Abstract class is declared using abstract keyword
 
-Object of abstract class cannot be created
+object of abstract class cannot be created
 
 Can contain abstract and non-abstract methods
 
-Abstract methods have no body
+Abstract methods have no body 
 
 Child class must override all abstract methods
 
@@ -48,7 +48,7 @@ package abstractClass;
         System.out.println("KFC");
         
     }
-    public final void Recipe()   //static method-Recipe => cannot be overridden
+    public final void Recipe()   //final method-Recipe => cannot be overridden
     {
         System.out.println("1. 2 kg flour "+"2. litre of water "+"3. x gm chillie "+"4. y gm salt");
     }
@@ -95,7 +95,7 @@ public class abstractClass1
 {
     public static void main(String[] args)
     {
-        KFC obj1=new KFCindia();
+        KFC obj1=new KFCindia(); //refernce of parent class holding child class object
         obj1.Recipe();
         obj1.festiveOffers();
         obj1.Billing();

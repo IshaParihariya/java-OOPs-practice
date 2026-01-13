@@ -1,4 +1,3 @@
-
 // downcasting
 
 // Downcasting allows access to child-specific methods by
@@ -14,6 +13,7 @@ class animal
 }
 class dog extends animal
 {
+    @Override
     void sound()
     {
         System.out.println("dog class :" +" bark sound ");

@@ -1,4 +1,5 @@
-// method 2 : class extending from Frame
+// BEST ONE 
+//method 2 : class extending from Frame
 package awt;
 import java.awt.*;
 
@@ -10,6 +11,7 @@ class MyFrame extends Frame // MyFrame extending from Frame
   
   public MyFrame() // constructor of the class MyFrame
   {
+      super("AWT App");
       setLayout(new FlowLayout()); // setting the layout
       tf=new TextField(40); // size of the text field 40
       b=new Button("submit");
@@ -19,6 +21,10 @@ class MyFrame extends Frame // MyFrame extending from Frame
       add(l); // adding label
       add(tf); // adding textfield
       add(b); // adding button
+      
+      // these can be done here as well
+     // setSize(500, 500); // setting size
+       // setVisible(true);// setting visibility
   }
   
   public void labelBackground()
